@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="he" dir="rtl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<!-- מזכרץ – home-page design concept (offline preview). Open directly in Chrome. -->
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<style>
+@font-face{font-family:'Heebo';font-weight:100 900;font-display:swap;src:url(assets/fonts/heebo-hebrew.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Heebo';font-weight:100 900;font-display:swap;src:url(assets/fonts/heebo-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+FEFF}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:300 900;font-display:swap;src:url(assets/fonts/frank-ruhl-libre-hebrew.woff2) format('woff2');unicode-range:U+0590-05FF,U+200C-2010,U+20AA,U+25CC,U+FB1D-FB4F}
+@font-face{font-family:'Frank Ruhl Libre';font-weight:300 900;font-display:swap;src:url(assets/fonts/frank-ruhl-libre-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+2000-206F,U+20AC,U+2122,U+FEFF}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;overflow-x:hidden;overflow-x:clip}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[data-split] .w{display:inline-block;white-space:nowrap}
+.num-range{direction:ltr;unicode-bidi:isolate;display:inline-block;white-space:nowrap}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+html:not(.js) .rv{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+.ph{font-size:.8em;opacity:.7;border:1px dashed currentColor;border-radius:6px;padding:0 .35em;white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+<title>מזכרץ – קונספט E · הפתיח של B, הטיפוגרפיה של C</title>
+<link rel="preload" as="image" type="image/avif" href="media/hq/hero-poster-m720.avif" media="(max-width:700px) and (orientation:portrait)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="media/hq/hero-poster-1280.avif" media="not all and (max-width:700px) and (orientation:portrait)" fetchpriority="high">
+<style>
+:root{--paper:#f6eee1;--paper2:#efe3cf;--walnut:#3a2414;--walnut2:#2a190d;--gold:#b88a44;--gold2:#d8b46a;--ink:#2b1d12;--mute:#6f5a45;--line:rgba(58,36,20,.16)}
+body{background:var(--paper);color:var(--ink);font:400 1.06rem/1.8 'Heebo',system-ui,sans-serif}
+.wrap{width:min(100% - 2.5rem,1240px);margin-inline:auto}
+.serif{font-family:'Frank Ruhl Libre',serif}
+h2{font:500 clamp(2.3rem,5.4vw,4.6rem)/1.05 'Frank Ruhl Libre',serif;letter-spacing:-.01em;margin:0 0 1.2rem}
+h2 em{font-style:normal;color:var(--gold)}
+.eyebrow{font:600 .76rem/1 'Heebo';letter-spacing:.34em;color:var(--gold);margin:0 0 1.1rem;display:flex;align-items:center;gap:.8rem}
+.eyebrow::after{content:"";height:1px;width:60px;background:var(--gold)}
+section{padding-block:clamp(4.5rem,11vw,9rem)}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:52px;padding:.8rem 1.9rem;font:600 1rem 'Heebo';text-decoration:none;border-radius:2px;transition:all .3s;white-space:nowrap}
+.btn-gold{background:linear-gradient(135deg,#d8b46a,#a87a35);color:#1f130a;box-shadow:0 12px 30px rgba(168,122,53,.3)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(168,122,53,.45)}
+.btn-line{border:1px solid currentColor}
+.btn-line:hover{background:rgba(216,180,106,.15)}
+.nav{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1.1rem clamp(1rem,3vw,2.8rem);color:#f6eee1;transition:all .4s}
+.nav.solid{background:rgba(246,238,225,.92);backdrop-filter:blur(12px);color:var(--ink);padding-block:.55rem;box-shadow:0 1px 0 var(--line)}
+.nav .logo img{height:66px;width:auto;filter:brightness(0) invert(1);transition:all .4s}
+.nav.solid .logo img{height:48px;filter:none}
+.nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:.93rem}
+.nav .btn{min-height:42px;padding:.45rem 1.2rem;font-size:.9rem}
+@media (max-width:900px){.nav ul{display:none}.nav .logo img{height:52px}}
+@media (max-width:560px){.eyebrow{letter-spacing:.16em;font-size:.72rem}.eyebrow::after{width:30px}}
+/* hero: split editorial with framed video */
+.hero{position:relative;min-height:100svh;background:var(--walnut2);color:#f6eee1;overflow:hidden;display:grid;align-items:end}
+.hero .bg{position:absolute;inset:-8% 0;}
+.hero .bg video,.hero .bg img{width:100%;height:100%;object-fit:cover}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(42,25,13,.15),rgba(42,25,13,.55) 45%,rgba(42,25,13,.92) 75%),linear-gradient(0deg,rgba(42,25,13,.95),transparent 55%)}
+.hero-in{position:relative;z-index:2;padding:9rem clamp(1.25rem,5vw,5rem) clamp(3rem,8vh,6rem);max-width:900px}
+.hero h1{margin:0}
+.hero .s1{display:block;font:500 clamp(3.8rem,11vw,9rem)/.95 'Frank Ruhl Libre',serif;letter-spacing:-.02em}
+.hero .s2{display:block;font:300 italic clamp(3.8rem,11vw,9rem)/.95 'Frank Ruhl Libre',serif;color:var(--gold2)}
+.hero .w{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em}
+.hero .ch{display:inline-block;transform:translateY(105%);animation:rise 1s calc(.25s + var(--i)*.045s) cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{transform:none}}
+.hero .desc{display:block;font:300 clamp(1.1rem,2.2vw,1.45rem)/1.55 'Heebo';margin:1.6rem 0 1rem;max-width:640px;opacity:0;animation:fade 1s 1.2s forwards}
+.hero .sub{color:#d9c8ad;max-width:600px;opacity:0;animation:fade 1s 1.4s forwards}
+.hero .ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;opacity:0;animation:fade 1s 1.6s forwards}
+.hero .ctas .btn-line{color:#f6eee1}
+.hero .rule{position:absolute;z-index:2;left:clamp(1.25rem,5vw,5rem);bottom:clamp(3rem,8vh,6rem);writing-mode:vertical-rl;font:500 .75rem 'Heebo';letter-spacing:.4em;color:var(--gold2)}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:700px){.hero .rule{display:none}.hero::before{background:linear-gradient(0deg,rgba(42,25,13,.97) 25%,rgba(42,25,13,.35) 75%,rgba(42,25,13,.6))}}
+/* marquee */
+.marq{background:var(--walnut);color:var(--gold2);overflow:hidden;white-space:nowrap;padding:1.05rem 0;font:400 clamp(1.1rem,2vw,1.5rem) 'Frank Ruhl Libre',serif}
+.marq div{display:inline-flex;gap:2.5rem;animation:marq 40s linear infinite;padding-inline-end:2.5rem}
+.marq span::after{content:"✦";margin-inline-start:2.5rem;font-size:.7em;opacity:.7}
+@keyframes marq{to{transform:translateX(50%)}}
+/* experience */
+.exp{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.exp .imgs{position:relative;aspect-ratio:4/5}
+.exp .imgs .a{position:absolute;inset:0 18% 14% 0;overflow:hidden;box-shadow:0 30px 70px rgba(58,36,20,.25)}
+.exp .imgs .b{position:absolute;inset:48% 0 0 46%;overflow:hidden;border:10px solid var(--paper);box-shadow:0 30px 60px rgba(58,36,20,.3)}
+.exp .imgs img,.exp .imgs video,.exp .imgs picture{width:100%;height:100%;object-fit:cover}
+.stats{display:flex;gap:clamp(1.5rem,4vw,3rem);margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+.stats b{display:block;font:500 clamp(2.4rem,5vw,3.6rem)/1 'Frank Ruhl Libre',serif;color:var(--gold)}
+.stats span{font-size:.85rem;color:var(--mute)}
+.exp p{color:var(--mute)}
+@media (max-width:900px){.exp{grid-template-columns:1fr}.exp .imgs{order:-1}}
+/* process – editorial chapters */
+.process{background:var(--walnut2);color:#f3e8d6;position:relative;overflow:hidden}
+.process::before{content:"";position:absolute;inset:0;opacity:.07;background:repeating-linear-gradient(95deg,transparent 0 22px,rgba(216,180,106,.6) 23px,transparent 24px 60px)}
+.proc-head{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:end;margin-bottom:clamp(3rem,7vw,6rem)}
+.proc-head p{color:#cdb994;margin:0}
+.chap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,6rem);align-items:center;margin-bottom:clamp(4rem,10vw,8rem)}
+.chap:nth-child(even){grid-template-columns:.85fr 1.15fr}
+.chap:nth-child(even) .cm{order:2}
+.cm{position:relative;aspect-ratio:16/11;overflow:hidden;clip-path:inset(12% 0 12% 0);transition:clip-path 1.4s cubic-bezier(.2,.8,.2,1);box-shadow:0 40px 90px rgba(0,0,0,.5)}
+.chap.in .cm{clip-path:inset(0)}
+.cm video,.cm img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
+.chap.in .cm video,.chap.in .cm img{transform:none}
+.cm.portrait{aspect-ratio:4/5;max-width:440px;justify-self:center;width:100%}
+.ct{position:relative}
+.ct .big{display:block;font:300 clamp(6rem,15vw,12rem)/.8 'Frank Ruhl Libre',serif;color:transparent;-webkit-text-stroke:1px rgba(216,180,106,.65);margin-bottom:.6rem}
+.ct h3{font:500 clamp(2rem,4vw,3.2rem)/1.1 'Frank Ruhl Libre',serif;margin:0 0 1rem;color:#fbf3e4}
+.ct p{color:#d6c4a4;font-size:1.12rem;max-width:28rem}
+.ct .k{display:inline-block;margin-top:1rem;font:600 .75rem 'Heebo';letter-spacing:.3em;color:var(--gold2);border-top:1px solid var(--gold);padding-top:.6rem}
+.ba{position:relative;display:grid;grid-template-columns:1fr auto 1fr;gap:clamp(1rem,3vw,2.5rem);align-items:center;margin-top:1rem;padding:clamp(1.5rem,4vw,3rem);border:1px solid rgba(216,180,106,.3)}
+.ba figure{margin:0;text-align:center;max-width:340px;justify-self:center;width:100%}.ba figcaption{font:500 .8rem 'Heebo';letter-spacing:.25em;color:var(--gold2);margin-top:.8rem}
+.ba img,.ba video{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+.ba .arrow{font:300 3rem 'Frank Ruhl Libre';color:var(--gold2)}
+@media (max-width:900px){.proc-head,.chap,.chap:nth-child(even){grid-template-columns:1fr}.chap:nth-child(even) .cm{order:0}.ct .big{font-size:5.5rem;position:absolute;top:-1rem;left:0;opacity:.6}.cm{clip-path:inset(6% 0 6% 0)}}
+@media (max-width:560px){.ba{grid-template-columns:1fr 1fr;}.ba .arrow{display:none}}
+/* digital */
+.digital{background:linear-gradient(180deg,var(--paper2),var(--paper))}
+.dig{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center}
+.phone{position:relative;width:min(290px,76vw);aspect-ratio:9/19;margin-inline:auto;border-radius:44px;background:#2a190d;padding:11px;box-shadow:0 50px 90px rgba(58,36,20,.35),0 0 0 1px rgba(184,138,68,.4)}
+.phone-notch{position:absolute;top:17px;left:50%;transform:translateX(-50%);width:86px;height:22px;border-radius:20px;background:#2a190d;z-index:2}
+.phone-screen{height:100%;border-radius:34px;background:linear-gradient(180deg,#fbf6ec,#efe2cb);display:flex;flex-direction:column;align-items:center;padding:3rem 1.1rem 1.1rem;text-align:center;overflow:hidden}
+.ps-logo{height:44px;width:auto;margin-bottom:.6rem}
+.ps-medal{width:62%;aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 12px 30px rgba(90,55,20,.35)}.ps-medal img{width:100%;height:100%;object-fit:cover}
+.ps-name{font:600 1.35rem 'Frank Ruhl Libre';margin-top:.9rem}.ps-date{color:#7b6550;font-size:.78rem}.ps-mem{margin:.6rem 0 .5rem;font-size:.9rem}
+.ps-btn{background:#3a2414;color:#f6eee1;border-radius:99px;padding:.45rem 1.1rem;font-size:.8rem;font-weight:600}
+.ps-thumbs{display:flex;gap:6px;margin-top:auto}.ps-thumbs i{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#d8c3a2,#b48a5c)}
+.phwrap{position:relative}
+.phwrap .medal{position:absolute;width:42%;aspect-ratio:1;border-radius:50%;overflow:hidden;bottom:6%;right:2%;box-shadow:0 30px 60px rgba(58,36,20,.4);border:6px solid var(--paper)}
+.phwrap .medal img{width:100%;height:100%;object-fit:cover}
+.qrline{display:flex;gap:.8rem;align-items:center;margin:1.4rem 0;font-weight:600}.qr{width:48px;height:48px;fill:var(--walnut)}
+.dig ol{list-style:none;padding:0;margin:0;counter-reset:d;display:grid;grid-template-columns:1fr 1fr;gap:0 1.6rem}
+.dig li{counter-increment:d;padding:.75rem 0;border-bottom:1px solid var(--line);display:flex;gap:.8rem;color:var(--mute);font-size:.97rem}
+.dig li::before{content:"0" counter(d);font:500 .95rem 'Frank Ruhl Libre';color:var(--gold)}
+@media (max-width:900px){.dig{grid-template-columns:1fr}.dig ol{grid-template-columns:1fr}}
+/* events */
+.events{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:1.4rem}
+.ev{text-decoration:none;display:block}
+.ev .im{overflow:hidden;aspect-ratio:3/4;margin-bottom:1.1rem}
+.ev:first-child .im{aspect-ratio:auto;height:calc(100% - 9rem)}
+.ev img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.ev picture{display:block;height:100%}
+.ev:hover img{transform:scale(1.05)}
+.ev h3{font:500 1.9rem 'Frank Ruhl Libre';margin:0}.ev p{color:var(--mute);margin:.3rem 0 0;font-size:.97rem}
+@media (max-width:900px){.events{grid-template-columns:1fr}.ev:first-child .im{aspect-ratio:3/4;height:auto}}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+.gal figure{margin:0;overflow:hidden;position:relative}
+.gal figure:nth-child(1){grid-column:span 7;aspect-ratio:3/2}.gal figure:nth-child(2){grid-column:span 5;aspect-ratio:auto}
+.gal figure:nth-child(3){grid-column:span 4;aspect-ratio:3/4}.gal figure:nth-child(4){grid-column:span 4;aspect-ratio:3/4}.gal figure:nth-child(5){grid-column:span 4;aspect-ratio:3/4}
+.gal img,.gal picture{width:100%;height:100%;object-fit:cover}
+.gal figcaption{position:absolute;bottom:.9rem;right:.9rem;background:rgba(246,238,225,.92);padding:.25rem .8rem;font:500 .85rem 'Frank Ruhl Libre'}
+@media (max-width:700px){.gal figure{grid-column:span 12!important;aspect-ratio:4/3!important}}
+/* packages */
+.pk{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+.pkg{padding:2.4rem 1.8rem;display:flex;flex-direction:column;border-inline-start:1px solid var(--line);position:relative}
+.pkg:first-child{border:0}
+.pkg.hot{background:var(--walnut2);color:#f3e8d6}
+.pkg.hot .for,.pkg.hot li{color:#d6c4a4}
+.pkg.hot::before{content:"המומלץ";position:absolute;top:0;left:1.8rem;background:var(--gold);color:#1f130a;font:700 .72rem 'Heebo';letter-spacing:.2em;padding:.35rem .8rem}
+.pkg small{color:var(--gold);letter-spacing:.3em;font-weight:600;font-size:.75rem}
+.pkg h3{font:500 2rem 'Frank Ruhl Libre';margin:.4rem 0}.pkg .for{color:var(--mute);font-size:.94rem;min-height:3.2em}
+.pkg ul{list-style:none;padding:0;margin:1rem 0 1.6rem}.pkg li{padding:.35rem 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.pkg .btn{margin-top:auto;justify-content:center}.price{font-size:.85rem;color:var(--mute)}
+@media (max-width:900px){.pk{grid-template-columns:1fr}.pkg{border-inline-start:0;border-top:1px solid var(--line)}}
+/* contact */
+.contact{background:var(--walnut);color:#f3e8d6}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem)}
+.bigphone{display:inline-block;font:500 clamp(2.4rem,6vw,4.2rem)/1 'Frank Ruhl Libre';color:var(--gold2);text-decoration:none;margin:.4rem 0 1.4rem}
+.contact p{color:#d6c4a4}
+.clist{list-style:none;padding:0;margin:1.4rem 0}.clist li{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid rgba(216,180,106,.2)}.clist li>span:first-child{color:var(--gold2);min-width:4.5rem;font-size:.9rem}
+.lead{background:var(--paper);color:var(--ink);padding:clamp(1.4rem,3vw,2.4rem);display:grid;gap:.9rem;box-shadow:0 40px 80px rgba(0,0,0,.35)}
+.lead label{display:grid;gap:.3rem;font-size:.88rem;color:var(--mute)}
+.lead input{min-height:50px;border:0;border-bottom:1px solid rgba(58,36,20,.35);background:transparent;padding:.6rem .2rem;font:inherit;color:var(--ink)}
+.lead input:focus{outline:0;border-color:var(--gold);box-shadow:0 2px 0 var(--gold)}
+.lead .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.lead button{min-height:54px;border:0;font:700 1.05rem 'Heebo';background:linear-gradient(135deg,#d8b46a,#a87a35);color:#1f130a;cursor:pointer;margin-top:.5rem}
+.fs{margin:0;color:var(--gold);min-height:1em}
+@media (max-width:900px){.cgrid{grid-template-columns:1fr}}@media (max-width:420px){.lead .row{grid-template-columns:1fr}}
+footer{background:var(--walnut2);color:#b9a58c;padding:2.4rem 0 6rem;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}footer img{height:56px;filter:brightness(0) invert(.85) sepia(.4)}
+.wa{position:fixed;bottom:18px;left:18px;z-index:60;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 10px 30px rgba(37,211,102,.35)}.wa svg{width:30px;height:30px}
+.center{text-align:center}.center .eyebrow{justify-content:center}
+
+/* ── E: C typography on B layout ── */
+/* quality pass: crisp hero (no extra scale, light gradient only where text sits), crisp text */
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+.hero .bg{inset:-3% 0}
+.hero .bg .hp,.hero .bg .hp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .bg video.hv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s}
+.hero .bg video.hv.on{opacity:1}
+.hero::before{background:linear-gradient(270deg,rgba(30,18,9,.82) 0%,rgba(30,18,9,.6) 30%,rgba(30,18,9,.18) 55%,transparent 70%),linear-gradient(0deg,rgba(30,18,9,.75) 0%,transparent 32%),linear-gradient(180deg,rgba(30,18,9,.45) 0%,transparent 16%)}
+@media (max-width:700px){.hero::before{background:linear-gradient(0deg,rgba(30,18,9,.95) 0%,rgba(30,18,9,.82) 38%,rgba(30,18,9,.25) 62%,transparent 75%),linear-gradient(180deg,rgba(30,18,9,.5) 0%,transparent 14%)}}
+:root{--gold:#c8943f;--gold2:#e9c178;--ember:#e07a2c}
+h2{font:900 clamp(2.4rem,6.2vw,5.2rem)/.98 'Heebo',sans-serif;letter-spacing:-.035em}
+h2 em{font-style:normal;background:linear-gradient(100deg,var(--gold2),var(--gold) 50%,var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* eyebrows → C's tilted chips, in gold */
+.eyebrow{display:inline-flex;font:800 .78rem/1 'Heebo';letter-spacing:.16em;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1f130a;padding:.42rem .85rem;border-radius:7px;transform:rotate(-2deg);margin-bottom:1.3rem}
+.eyebrow::after{display:none}
+.center .eyebrow{justify-content:center}
+/* hero: B's full-bleed parallax video, C's heavy pop-in type */
+.hero .s1,.hero .s2{font:900 clamp(4rem,11.5vw,9.6rem)/.9 'Heebo',sans-serif;letter-spacing:-.045em}
+.hero .s2{font-style:normal;color:var(--gold2);text-shadow:none;padding-bottom:.06em}
+.eyebrow,.hero .eyebrow,.proc-head p.eyebrow,.contact p.eyebrow{color:#1f130a!important}
+.proc-head p.eyebrow{margin:0 0 1.3rem}
+.hero .w{overflow:visible}
+.hero .ch{transform:translateY(.4em) rotate(6deg) scale(.8);opacity:0;animation:pop .6s calc(.2s + var(--i)*.05s) cubic-bezier(.3,1.6,.5,1) forwards}
+@keyframes pop{to{opacity:1;transform:none}}
+.hero .desc{font:500 clamp(1.1rem,2vw,1.4rem)/1.5 'Heebo'}
+.hero .rule{font:800 .72rem 'Heebo';letter-spacing:.3em}
+.btn{font:800 1.02rem 'Heebo';border-radius:12px}
+.nav ul a{font-weight:600}
+/* marquee ribbon → C's heavy ticker type, still walnut + gold */
+.marq{font:900 clamp(1.2rem,2.6vw,1.9rem) 'Heebo';letter-spacing:-.01em}
+.marq span::after{content:"●";font-size:.45em;vertical-align:middle}
+/* stats */
+.stats b{font:900 clamp(2.4rem,5vw,3.6rem)/1 'Heebo';letter-spacing:-.03em;background:linear-gradient(100deg,var(--gold2),var(--gold),var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent}
+/* process chapters: C's outlined heavy numerals + heavy titles */
+.ct .big{font:900 clamp(6rem,15vw,12rem)/.8 'Heebo';letter-spacing:-.05em;-webkit-text-stroke:2px rgba(233,193,120,.75)}
+.ct h3{font:900 clamp(2rem,4.2vw,3.3rem)/1.02 'Heebo';letter-spacing:-.03em}
+.ct .k{font:800 .74rem 'Heebo';letter-spacing:.16em;border:0;padding:.35rem .75rem;background:rgba(233,193,120,.12);border-radius:7px;color:var(--gold2)}
+.ba figcaption{font:800 .78rem 'Heebo';letter-spacing:.14em}
+.ba .arrow{font:900 2.6rem 'Heebo';color:var(--gold2)}
+/* rest of page */
+.ps-name{font:900 1.3rem 'Heebo'}
+.dig li::before{font:900 .95rem 'Heebo'}
+.ev h3{font:900 2rem 'Heebo';letter-spacing:-.02em}
+.gal figcaption{font:800 .82rem 'Heebo';border-radius:7px}
+.pkg h3{font:900 2rem 'Heebo';letter-spacing:-.02em}
+.pkg small{font-weight:800;letter-spacing:.16em}
+.pkg.hot::before{font:800 .72rem 'Heebo';letter-spacing:.14em;border-radius:0 0 7px 7px}
+.bigphone{font:900 clamp(2.4rem,6vw,4.2rem)/1 'Heebo';letter-spacing:-.02em}
+.lead button{font:900 1.08rem 'Heebo';border-radius:12px}
+@media (max-width:900px){.ct .big{font-size:5.5rem}}
+@media (max-width:560px){.eyebrow{letter-spacing:.1em;font-size:.72rem}}
+</style>
+</head><body>
+
+<header class="nav" data-nav><a class="logo" href="#"><img src="assets/img/logo.svg" alt="מזכרץ" width="120" height="125"></a><nav><ul><li><a href="#process">איך זה עובד</a></li><li><a href="#events">שירותים</a></li><li><a href="#packages">חבילות</a></li><li><a href="#gallery">גלריה</a></li><li><a href="#contact">צרו קשר</a></li></ul></nav><a class="btn btn-gold" href="#contact">בדקו תאריך פנוי</a></header>
+<main>
+<section class="hero" style="padding:0">
+ <div class="bg" data-parallax="0.05"><picture class="hp" aria-hidden="true">
+<source media="(max-width:700px) and (orientation:portrait)" type="image/avif" srcset="media/hq/hero-poster-m720.avif">
+<source media="(max-width:700px) and (orientation:portrait)" type="image/webp" srcset="media/hq/hero-poster-m720.webp">
+<source type="image/avif" srcset="media/hq/hero-poster-1280.avif"><source type="image/webp" srcset="media/hq/hero-poster-1280.webp">
+<img src="media/hq/hero-poster-1280.jpg" alt="" width="1280" height="720" fetchpriority="high" decoding="async"></picture><video class="hv" muted loop playsinline preload="none" aria-label="אורחים חוגגים באירוע" data-d="media/hq/hero-1280.mp4" data-d-av1="media/hq/hero-1280-av1.mp4" data-m="media/hq/hero-m720.mp4" data-m-av1="media/hq/hero-m720-av1.mp4"></video></div>
+ <div class="hero-in">
+  <p class="eyebrow" style="color:var(--gold2)">חתימה באור, חיה — לאירועים בישראל</p>
+  <h1><span class="s1" data-split>לטבוע חותם</span><span class="s2" data-split>ברגע.</span><span class="desc">עמדת צילום וחריטה על עץ לאירוע שלכם. כל אורח יוצא עם מזכרת אישית תוך <bdi dir="ltr" class="num-range">2–4</bdi> דקות.</span></h1>
+  <p class="sub">אנחנו מצלמים את האורחים, הופכים כל תמונה לשפת קו אמנותית וחורטים אותה על עץ טבעי, מול העיניים. מזכרת חמה ועל-זמנית לחתונות, לבר ובת מצווה ולאירועי חברה.</p>
+  <div class="ctas"><a class="btn btn-gold" href="#contact">בדקו תאריך פנוי ←</a><a class="btn btn-line" href="#process">איך זה עובד?</a></div>
+ </div><span class="rule" aria-hidden="true">MAZKERETZ · מזכרץ</span>
+</section>
+<div class="marq" aria-hidden="true"><div><span>חתימה באור</span><span>עץ טבעי</span><span>חתונות</span><span>בר ובת מצווה</span><span>אירועי חברה</span><span>מזכרת שנשארת</span><span>לטבוע חותם ברגע</span><span>חתימה באור</span><span>עץ טבעי</span><span>חתונות</span><span>בר ובת מצווה</span><span>אירועי חברה</span><span>מזכרת שנשארת</span><span>לטבוע חותם ברגע</span></div></div>
+<section><div class="wrap exp">
+ <div class="imgs rv"><div class="a" data-parallax="0.05"><video class="" data-auto muted loop playsinline preload="none" poster="media/hq/flow-poster-1280.webp" aria-label="מהצילום לקו האמנותי ולחריטה"><source data-src="media/hq/flow-av1.mp4" type="video/mp4; codecs=&quot;av01.0.05M.08&quot;"><source data-src="media/hq/flow.mp4" type="video/mp4"></video></div><div class="b" data-parallax="-0.08"><picture class=""><source type="image/avif" srcset="media/hq/img/lior-adam-round-medallion-480.avif 480w, media/hq/img/lior-adam-round-medallion-720.avif 720w, media/hq/img/lior-adam-round-medallion-960.avif 960w, media/hq/img/lior-adam-round-medallion-1100.avif 1100w" sizes="40vw"><source type="image/webp" srcset="media/hq/img/lior-adam-round-medallion-480.webp 480w, media/hq/img/lior-adam-round-medallion-720.webp 720w, media/hq/img/lior-adam-round-medallion-960.webp 960w, media/hq/img/lior-adam-round-medallion-1100.webp 1100w" sizes="40vw"><img src="media/hq/img/lior-adam-round-medallion-960.jpg" srcset="media/hq/img/lior-adam-round-medallion-480.jpg 480w, media/hq/img/lior-adam-round-medallion-720.jpg 720w, media/hq/img/lior-adam-round-medallion-960.jpg 960w, media/hq/img/lior-adam-round-medallion-1100.jpg 1100w" sizes="40vw" width="1100" height="1100" alt="מדליית עץ חרוטה – ליאור ואדם" loading="lazy" decoding="async"></picture></div></div>
+ <div class="rv d2"><p class="eyebrow">החוויה</p><h2>חוויה שמדברת לכולם, <em>בשפות שונות.</em></h2><p>יש מי שמתרגש מהפרטים הקטנים ומהאסתטיקה המדויקת. יש מי שמוקסם מהחום של העץ, מהריח ומהרגע שבו החריטה נולדת מול העיניים.</p><p>מזכרץ היא לא עוד מזכרת שנשארת על השולחן בסוף הערב. זה רגע שנחרט בזיכרון, ופריט שרוצים לקחת הביתה ולהניח במקום הכי בולט.</p><div class="stats"><div><b><bdi dir="ltr" class="num-range">2–4</bdi></b><span>דקות חריטה לפריט</span></div><div><b>100%</b><span>עץ טבעי, חם ועל-זמני</span></div><div><b>∞</b><span>שנים שהחותם נשאר על העץ</span></div></div></div>
+</div></section>
+<section class="process" id="process"><div class="wrap">
+ <div class="proc-head rv"><div><p class="eyebrow">התהליך</p><h2 style="margin:0">מהצילום לפריט –<br><em>בארבעה צעדים</em></h2></div><p>ככה זה נראה באירוע: האורחים מצטלמים, והפריט החרוט מוכן תוך דקות.</p></div>
+ <article class="chap rv"><div class="cm"><video class="sm" data-auto muted loop playsinline preload="none" poster="media/hq/step-1-photo-poster.webp" aria-label="האורחים מצטלמים באירוע"><source data-src="media/hq/step-1-photo-av1.mp4" type="video/mp4; codecs=&quot;av01.0.05M.08&quot;"><source data-src="media/hq/step-1-photo.mp4" type="video/mp4"></video></div>
+<div class="ct"><span class="big" aria-hidden="true">01</span><h3>מצטלמים</h3><p>האורחים ניגשים לעמדה שמוקמת באירוע ובוחרים את הרגע שלהם. התמונה עוברת מיד לשלב הבא.</p><span class="k">שלב 01 · באירוע</span></div></article><article class="chap rv"><div class="cm"><video class="sm" data-auto muted loop playsinline preload="none" poster="media/hq/step-2-lineart-poster.webp" aria-label="התמונה הופכת לקו אמנותי על המסך"><source data-src="media/hq/step-2-lineart-av1.mp4" type="video/mp4; codecs=&quot;av01.0.05M.08&quot;"><source data-src="media/hq/step-2-lineart.mp4" type="video/mp4"></video></div>
+<div class="ct"><span class="big" aria-hidden="true">02</span><h3>הופכים לקו אמנותי</h3><p>התמונה מקבלת פרשנות אמנותית ומתורגמת לשפת קו נקייה, שמותאמת לחומר ולמרקם של העץ.</p><span class="k">שלב 02 · על המסך</span></div></article><article class="chap rv"><div class="cm"><video class="sm" data-auto muted loop playsinline preload="none" poster="media/hq/step-3-laser-poster.webp" aria-label="הלייזר חורט את הדיוקן על מדליית עץ"><source data-src="media/hq/step-3-laser-av1.mp4" type="video/mp4; codecs=&quot;av01.0.05M.08&quot;"><source data-src="media/hq/step-3-laser.mp4" type="video/mp4"></video></div>
+<div class="ct"><span class="big" aria-hidden="true">03</span><h3>חורטים באור</h3><p>האור חורט את הדיוקן על הפריט שבחרתם, מדליית עץ, פרוסת עץ טבעית ועוד, תוך <bdi dir="ltr" class="num-range">2–4</bdi> דקות.</p><span class="k">שלב 03 · על העץ</span></div></article><article class="chap rv"><div class="cm portrait"><video class="sm" data-auto muted loop playsinline preload="none" poster="media/hq/step-4-keepsake-poster.webp" aria-label="אורחת מחזיקה את הפריט החרוט שלה"><source data-src="media/hq/step-4-keepsake.mp4" type="video/mp4"></video></div>
+<div class="ct"><span class="big" aria-hidden="true">04</span><h3>לוקחים הביתה</h3><p>כל אורח מקבל את הפריט עם קוד QR חרוט, שמוביל לדף אישי עם התמונה הדיגיטלית, הגלריה ואפשרויות שיתוף.</p><span class="k">שלב 04 · ביד ובנייד</span></div></article>
+ <div class="ba rv"><figure><picture class=""><source type="image/avif" srcset="media/hq/img/photo-to-engraving-480.avif 480w, media/hq/img/photo-to-engraving-669.avif 669w" sizes="(max-width:560px) 45vw, 340px"><source type="image/webp" srcset="media/hq/img/photo-to-engraving-480.webp 480w, media/hq/img/photo-to-engraving-669.webp 669w" sizes="(max-width:560px) 45vw, 340px"><img src="media/hq/img/photo-to-engraving-669.jpg" srcset="media/hq/img/photo-to-engraving-480.jpg 480w, media/hq/img/photo-to-engraving-669.jpg 669w" sizes="(max-width:560px) 45vw, 340px" width="669" height="1200" alt="מהצילום לחותם – תמונה ולצידה הדיוקן החרוט" loading="lazy" decoding="async"></picture><figcaption>הצילום והחותם</figcaption></figure><span class="arrow" aria-hidden="true">←</span><figure><picture class=""><source type="image/avif" srcset="media/hq/img/lior-adam-round-medallion-480.avif 480w, media/hq/img/lior-adam-round-medallion-720.avif 720w, media/hq/img/lior-adam-round-medallion-960.avif 960w, media/hq/img/lior-adam-round-medallion-1100.avif 1100w" sizes="(max-width:560px) 45vw, 340px"><source type="image/webp" srcset="media/hq/img/lior-adam-round-medallion-480.webp 480w, media/hq/img/lior-adam-round-medallion-720.webp 720w, media/hq/img/lior-adam-round-medallion-960.webp 960w, media/hq/img/lior-adam-round-medallion-1100.webp 1100w" sizes="(max-width:560px) 45vw, 340px"><img src="media/hq/img/lior-adam-round-medallion-960.jpg" srcset="media/hq/img/lior-adam-round-medallion-480.jpg 480w, media/hq/img/lior-adam-round-medallion-720.jpg 720w, media/hq/img/lior-adam-round-medallion-960.jpg 960w, media/hq/img/lior-adam-round-medallion-1100.jpg 1100w" sizes="(max-width:560px) 45vw, 340px" width="1100" height="1100" alt="המדליה המוגמרת – ליאור ואדם" loading="lazy" decoding="async"></picture><figcaption>הפריט המוגמר</figcaption></figure></div>
+</div></section>
+<section class="digital"><div class="wrap dig">
+ <div class="phwrap rv"><div class="phone" aria-label="דוגמה לדף האישי שהאורח מקבל בסריקת ה-QR" role="img">
+ <div class="phone-notch"></div>
+ <div class="phone-screen">
+  <img class="ps-logo" src="assets/img/logo.svg" alt="" width="60" height="62">
+  <div class="ps-medal"><picture class=""><source type="image/webp" srcset="assets/img/lior-adam-round-medallion-480.webp 480w, assets/img/lior-adam-round-medallion-720.webp 720w, assets/img/lior-adam-round-medallion-960.webp 960w" sizes="180px"><img src="assets/img/lior-adam-round-medallion-720.jpg" srcset="assets/img/lior-adam-round-medallion-480.jpg 480w, assets/img/lior-adam-round-medallion-720.jpg 720w, assets/img/lior-adam-round-medallion-960.jpg 960w" sizes="180px" width="960" height="960" alt="" loading="lazy" decoding="async"></picture></div>
+  <b class="ps-name">ליאור ואדם</b>
+  <small class="ps-date">05 ספטמבר 2025 · חתונה</small>
+  <p class="ps-mem">הזיכרון שלך מהאירוע</p>
+  <span class="ps-btn">הורד את התמונה</span>
+  <div class="ps-thumbs"><i></i><i></i><i></i></div>
+ </div>
+</div></div>
+ <div class="rv d2"><p class="eyebrow">השכבה הדיגיטלית</p><h2>הגשר בין העץ <em>לזיכרון.</em></h2><p style="color:var(--mute)">בגב כל פריט חרוט יש קוד QR קטן ומינימליסטי. סריקה אחת בנייד פותחת חוויה דיגיטלית שלמה: התמונות והזיכרונות מהאירוע, שמורים ומחכים לכם.</p><div class="qrline"><svg class="qr" viewBox="0 0 7 7" aria-hidden="true"><rect x="0" y="0" width="1" height="1"/><rect x="0" y="1" width="1" height="1"/><rect x="0" y="2" width="1" height="1"/><rect x="1" y="0" width="1" height="1"/><rect x="2" y="0" width="1" height="1"/><rect x="2" y="1" width="1" height="1"/><rect x="2" y="2" width="1" height="1"/><rect x="1" y="2" width="1" height="1"/><rect x="4" y="0" width="1" height="1"/><rect x="5" y="1" width="1" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="6" y="0" width="1" height="1"/><rect x="6" y="1" width="1" height="1"/><rect x="6" y="2" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="6" y="4" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="0" y="4" width="1" height="1"/><rect x="1" y="5" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="0" y="6" width="1" height="1"/><rect x="2" y="6" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/></svg><span>סרקו לחוויה דיגיטלית אישית</span></div><ol><li>דף אישי לכל אורח עם התמונה המעובדת</li><li>גלריה משותפת לכל אורחי האירוע</li><li>הורדת התמונה ברזולוציה גבוהה</li><li>שיתוף ישיר לרשתות החברתיות</li><li>מיתוג האירוע בכל החוויה הדיגיטלית</li><li>פאנל ניהול עם נתוני שימוש בזמן אמת</li></ol></div>
+</div></section>
+<section id="events"><div class="wrap"><div class="rv" style="margin-bottom:2.5rem"><p class="eyebrow">שירותים</p><h2>לכל אירוע <em>החותם שלו.</em></h2></div><div class="events"><a class="ev rv d0" href="#contact"><div class="im"><picture class=""><source type="image/avif" srcset="media/hq/img/lior-adam-shelf-480.avif 480w, media/hq/img/lior-adam-shelf-720.avif 720w, media/hq/img/lior-adam-shelf-960.avif 960w, media/hq/img/lior-adam-shelf-1127.avif 1127w" sizes="(max-width:900px) 100vw, 33vw"><source type="image/webp" srcset="media/hq/img/lior-adam-shelf-480.webp 480w, media/hq/img/lior-adam-shelf-720.webp 720w, media/hq/img/lior-adam-shelf-960.webp 960w, media/hq/img/lior-adam-shelf-1127.webp 1127w" sizes="(max-width:900px) 100vw, 33vw"><img src="media/hq/img/lior-adam-shelf-960.jpg" srcset="media/hq/img/lior-adam-shelf-480.jpg 480w, media/hq/img/lior-adam-shelf-720.jpg 720w, media/hq/img/lior-adam-shelf-960.jpg 960w, media/hq/img/lior-adam-shelf-1127.jpg 1127w" sizes="(max-width:900px) 100vw, 33vw" width="1127" height="1400" alt="חתונות" loading="lazy" decoding="async"></picture></div><h3>חתונות</h3><p>כל אורח הופך לחלק מהרגע ויוצא עם פריט עץ חם לזכור בו את היום שלכם.</p></a><a class="ev rv d1" href="#contact"><div class="im"><picture class=""><source type="image/avif" srcset="media/hq/img/dana-maor-thank-you-480.avif 480w, media/hq/img/dana-maor-thank-you-720.avif 720w, media/hq/img/dana-maor-thank-you-896.avif 896w" sizes="(max-width:900px) 100vw, 33vw"><source type="image/webp" srcset="media/hq/img/dana-maor-thank-you-480.webp 480w, media/hq/img/dana-maor-thank-you-720.webp 720w, media/hq/img/dana-maor-thank-you-896.webp 896w" sizes="(max-width:900px) 100vw, 33vw"><img src="media/hq/img/dana-maor-thank-you-896.jpg" srcset="media/hq/img/dana-maor-thank-you-480.jpg 480w, media/hq/img/dana-maor-thank-you-720.jpg 720w, media/hq/img/dana-maor-thank-you-896.jpg 896w" sizes="(max-width:900px) 100vw, 33vw" width="896" height="1200" alt="בר ובת מצווה" loading="lazy" decoding="async"></picture></div><h3>בר ובת מצווה</h3><p>מזכרת אישית שהחברים והמשפחה ישמחו לקחת הביתה.</p></a><a class="ev rv d2" href="#contact"><div class="im"><picture class=""><source type="image/avif" srcset="media/hq/img/engraved-medallion-qr-480.avif 480w, media/hq/img/engraved-medallion-qr-720.avif 720w, media/hq/img/engraved-medallion-qr-960.avif 960w, media/hq/img/engraved-medallion-qr-1024.avif 1024w" sizes="(max-width:900px) 100vw, 33vw"><source type="image/webp" srcset="media/hq/img/engraved-medallion-qr-480.webp 480w, media/hq/img/engraved-medallion-qr-720.webp 720w, media/hq/img/engraved-medallion-qr-960.webp 960w, media/hq/img/engraved-medallion-qr-1024.webp 1024w" sizes="(max-width:900px) 100vw, 33vw"><img src="media/hq/img/engraved-medallion-qr-960.jpg" srcset="media/hq/img/engraved-medallion-qr-480.jpg 480w, media/hq/img/engraved-medallion-qr-720.jpg 720w, media/hq/img/engraved-medallion-qr-960.jpg 960w, media/hq/img/engraved-medallion-qr-1024.jpg 1024w" sizes="(max-width:900px) 100vw, 33vw" width="1024" height="1024" alt="אירועי חברה" loading="lazy" decoding="async"></picture></div><h3>אירועי חברה</h3><p>לא עוד מוצר קד"מ מפלסטיק, אלא חוויית פרימיום שנושאת את המותג שלכם.</p></a></div></div></section>
+<section id="gallery" style="padding-top:0"><div class="wrap"><div class="rv" style="margin-bottom:2rem"><p class="eyebrow">גלריה</p><h2>רגעים <em>שנחרטו.</em></h2></div><div class="gal"><figure class="rv"><picture class=""><source type="image/avif" srcset="media/hq/img/keepsake-living-room-480.avif 480w, media/hq/img/keepsake-living-room-720.avif 720w, media/hq/img/keepsake-living-room-960.avif 960w, media/hq/img/keepsake-living-room-1280.avif 1280w, media/hq/img/keepsake-living-room-1600.avif 1600w" sizes="(max-width:700px) 100vw, 50vw"><source type="image/webp" srcset="media/hq/img/keepsake-living-room-480.webp 480w, media/hq/img/keepsake-living-room-720.webp 720w, media/hq/img/keepsake-living-room-960.webp 960w, media/hq/img/keepsake-living-room-1280.webp 1280w, media/hq/img/keepsake-living-room-1600.webp 1600w" sizes="(max-width:700px) 100vw, 50vw"><img src="media/hq/img/keepsake-living-room-960.jpg" srcset="media/hq/img/keepsake-living-room-480.jpg 480w, media/hq/img/keepsake-living-room-720.jpg 720w, media/hq/img/keepsake-living-room-960.jpg 960w, media/hq/img/keepsake-living-room-1280.jpg 1280w, media/hq/img/keepsake-living-room-1600.jpg 1600w" sizes="(max-width:700px) 100vw, 50vw" width="1600" height="1073" alt="בסלון, אחרי היום הגדול" loading="lazy" decoding="async"></picture><figcaption>בסלון, אחרי היום הגדול</figcaption></figure><figure class="rv"><picture class=""><source type="image/avif" srcset="media/hq/img/lior-adam-round-medallion-480.avif 480w, media/hq/img/lior-adam-round-medallion-720.avif 720w, media/hq/img/lior-adam-round-medallion-960.avif 960w, media/hq/img/lior-adam-round-medallion-1100.avif 1100w" sizes="(max-width:700px) 100vw, 50vw"><source type="image/webp" srcset="media/hq/img/lior-adam-round-medallion-480.webp 480w, media/hq/img/lior-adam-round-medallion-720.webp 720w, media/hq/img/lior-adam-round-medallion-960.webp 960w, media/hq/img/lior-adam-round-medallion-1100.webp 1100w" sizes="(max-width:700px) 100vw, 50vw"><img src="media/hq/img/lior-adam-round-medallion-960.jpg" srcset="media/hq/img/lior-adam-round-medallion-480.jpg 480w, media/hq/img/lior-adam-round-medallion-720.jpg 720w, media/hq/img/lior-adam-round-medallion-960.jpg 960w, media/hq/img/lior-adam-round-medallion-1100.jpg 1100w" sizes="(max-width:700px) 100vw, 50vw" width="1100" height="1100" alt="ליאור ואדם · 09.2025" loading="lazy" decoding="async"></picture><figcaption>ליאור ואדם · 09.2025</figcaption></figure><figure class="rv"><picture class=""><source type="image/avif" srcset="media/hq/img/dana-maor-styled-480.avif 480w, media/hq/img/dana-maor-styled-720.avif 720w, media/hq/img/dana-maor-styled-960.avif 960w, media/hq/img/dana-maor-styled-1048.avif 1048w" sizes="(max-width:700px) 100vw, 50vw"><source type="image/webp" srcset="media/hq/img/dana-maor-styled-480.webp 480w, media/hq/img/dana-maor-styled-720.webp 720w, media/hq/img/dana-maor-styled-960.webp 960w, media/hq/img/dana-maor-styled-1048.webp 1048w" sizes="(max-width:700px) 100vw, 50vw"><img src="media/hq/img/dana-maor-styled-960.jpg" srcset="media/hq/img/dana-maor-styled-480.jpg 480w, media/hq/img/dana-maor-styled-720.jpg 720w, media/hq/img/dana-maor-styled-960.jpg 960w, media/hq/img/dana-maor-styled-1048.jpg 1048w" sizes="(max-width:700px) 100vw, 50vw" width="1048" height="1400" alt="דנה ומאור" loading="lazy" decoding="async"></picture><figcaption>דנה ומאור</figcaption></figure><figure class="rv"><picture class=""><source type="image/avif" srcset="media/hq/img/line-art-interpretation-480.avif 480w, media/hq/img/line-art-interpretation-720.avif 720w, media/hq/img/line-art-interpretation-733.avif 733w" sizes="(max-width:700px) 100vw, 50vw"><source type="image/webp" srcset="media/hq/img/line-art-interpretation-480.webp 480w, media/hq/img/line-art-interpretation-720.webp 720w, media/hq/img/line-art-interpretation-733.webp 733w" sizes="(max-width:700px) 100vw, 50vw"><img src="media/hq/img/line-art-interpretation-733.jpg" srcset="media/hq/img/line-art-interpretation-480.jpg 480w, media/hq/img/line-art-interpretation-720.jpg 720w, media/hq/img/line-art-interpretation-733.jpg 733w" sizes="(max-width:700px) 100vw, 50vw" width="733" height="1100" alt="פרשנות אומנותית" loading="lazy" decoding="async"></picture><figcaption>פרשנות אומנותית</figcaption></figure><figure class="rv"><picture class=""><source type="image/avif" srcset="media/hq/img/lior-adam-shelf-480.avif 480w, media/hq/img/lior-adam-shelf-720.avif 720w, media/hq/img/lior-adam-shelf-960.avif 960w, media/hq/img/lior-adam-shelf-1127.avif 1127w" sizes="(max-width:700px) 100vw, 50vw"><source type="image/webp" srcset="media/hq/img/lior-adam-shelf-480.webp 480w, media/hq/img/lior-adam-shelf-720.webp 720w, media/hq/img/lior-adam-shelf-960.webp 960w, media/hq/img/lior-adam-shelf-1127.webp 1127w" sizes="(max-width:700px) 100vw, 50vw"><img src="media/hq/img/lior-adam-shelf-960.jpg" srcset="media/hq/img/lior-adam-shelf-480.jpg 480w, media/hq/img/lior-adam-shelf-720.jpg 720w, media/hq/img/lior-adam-shelf-960.jpg 960w, media/hq/img/lior-adam-shelf-1127.jpg 1127w" sizes="(max-width:700px) 100vw, 50vw" width="1127" height="1400" alt="ליאור ואדם" loading="lazy" decoding="async"></picture><figcaption>ליאור ואדם</figcaption></figure></div></div></section>
+<section id="packages" style="padding-top:0"><div class="wrap"><div class="center rv" style="margin-bottom:2.5rem"><p class="eyebrow">חבילות</p><h2>בחרו את החבילה <em>שמתאימה לכם</em></h2><p style="color:var(--mute)">כל החבילות כוללות התקנה, הפעלה ופירוק. אנחנו מגיעים אליכם.</p></div><div class="pk"><article class="pkg rv"><small>בסיסי</small><h3>אירוע פרטי</h3><p class="for">לאירועים קטנים עד 100 אורחים – ברית, בר מצווה, יום הולדת</p><p class="price">מחיר: <span class="ph">[חסר]</span></p><ul><li>עד 80 פריטים חרוטים</li><li>מדליות עץ עגולות</li><li>גלריה דיגיטלית לאורחים</li><li>QR אישי לכל פריט</li></ul><a class="btn btn-line" href="#contact">לבדיקת תאריך</a></article><article class="pkg rv hot"><small>פרמיום</small><h3>חתונה מושלמת</h3><p class="for">לחתונות ואירועים גדולים מ-100 אורחים</p><p class="price">מחיר: <span class="ph">[חסר]</span></p><ul><li>עד 200 פריטים חרוטים</li><li>מדליות עץ + פרוסות עץ טבעיות</li><li>גלריה דיגיטלית מלאה</li><li>דף נחיתה ממותג לאירוע</li><li>שני נציגים באירוע</li></ul><a class="btn btn-gold" href="#contact">לבדיקת תאריך</a></article><article class="pkg rv"><small>ארגוני</small><h3>אירוע עסקי</h3><p class="for">לכנסים, תערוכות ואירועי חברה – תמחור לפי היקף</p><p class="price">מחיר: <span class="ph">[חסר]</span></p><ul><li>כמות בלתי מוגבלת</li><li>לוגו ומיתוג חברה</li><li>QR לדף שיווקי / CRM</li><li>גלריה ממותגת</li><li>צוות מלא לאירוע</li></ul><a class="btn btn-line" href="#contact">לבדיקת תאריך</a></article></div></div></section>
+<section class="contact" id="contact"><div class="wrap cgrid">
+ <div class="rv"><p class="eyebrow">צרו קשר</p><h2>בואו נשאיר <em>חותם ביחד.</em></h2><p>ספרו לנו על האירוע ונחזור אליכם תוך 24 שעות. עונת החתונות מתמלאת מהר – מומלץ להזמין <bdi dir="ltr" class="num-range">4–6</bdi> שבועות מראש.</p>
+ <a class="bigphone ltr" href="tel:+972559176777">055-917-6777</a><br><a class="btn btn-line" href="https://wa.me/972559176777?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A2%D7%9E%D7%93%D7%AA%20%D7%9E%D7%96%D7%9B%D7%A8%D7%A5%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%A9%D7%9C%D7%A0%D7%95.%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%3A%20___%2C%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%95%D7%A8%D7%97%D7%99%D7%9D%3A%20___" target="_blank" rel="noopener"><svg viewBox="0 0 32 32" aria-hidden="true" width="22" height="22"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.53 1.74 6.5L3 29l6.68-1.75A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.64c-2 0-3.95-.54-5.65-1.55l-.4-.24-3.97 1.04 1.06-3.86-.26-.4A10.6 10.6 0 0 1 5.4 16c0-5.87 4.77-10.64 10.64-10.64 5.86 0 10.63 4.77 10.63 10.64 0 5.86-4.77 10.64-10.63 10.64Zm5.83-7.96c-.32-.16-1.9-.94-2.19-1.04-.3-.11-.5-.16-.72.16-.21.32-.82 1.04-1 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.21-.18-.32-.02-.5.14-.65.15-.15.32-.37.48-.56.16-.18.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.08 1.3 3.3.16.2 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.46.2 2 .12.62-.09 1.9-.78 2.16-1.53.27-.74.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37Z"/></svg> דברו איתנו בוואטסאפ</a><ul class="clist">
+ <li><span>טלפון</span><a href="tel:+972559176777" class="ltr">055-917-6777</a></li>
+ <li><span>אימייל</span><a href="mailto:mazal-tov@mazkeretz.co.il">mazal-tov@mazkeretz.co.il</a></li>
+ <li><span>שעות</span><span>א׳–ה׳, <bdi dir="ltr" class="num-range">9:00–18:00</bdi></span></li>
+ <li><span>אזור</span><span>בכל רחבי ישראל – אנחנו מגיעים אליכם</span></li></ul></div>
+ <div class="rv d2"><form class="lead" action="#" method="POST" onsubmit="event.preventDefault();var el=this.querySelector('.fs');if(el)el.textContent='זו גרסת תצוגה, הטופס לא שולח.';return false;">
+ <label><span>שם מלא</span><input name="שם מלא" autocomplete="name" placeholder="איך קוראים לך?" required></label>
+ <label><span>טלפון לחזרה</span><input name="טלפון" type="tel" autocomplete="tel" placeholder="05X-XXXXXXX" required></label>
+ <div class="row"><label><span>תאריך האירוע</span><input name="תאריך האירוע" type="date" required></label>
+ <label><span>מספר אורחים</span><input name="מספר אורחים" type="number" min="1" placeholder="למשל 150" required></label></div>
+ <button type="submit">בדקו תאריך פנוי</button><p class="fs" role="status"></p></form></div></div></section>
+</main>
+<footer><div class="wrap"><img src="assets/img/logo.svg" alt="מזכרץ" width="54" height="56" loading="lazy"><span>חותמים רגעים על עץ טבעי. חתימה באור בזמן אמת, לאירועים ייחודיים בישראל.</span><span>© 2026 מזכרץ</span></div></footer>
+<a class="wa" href="https://wa.me/972559176777?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A2%D7%9E%D7%93%D7%AA%20%D7%9E%D7%96%D7%9B%D7%A8%D7%A5%20%D7%9C%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%D7%A9%D7%9C%D7%A0%D7%95.%20%D7%AA%D7%90%D7%A8%D7%99%D7%9A%3A%20___%2C%20%D7%9E%D7%A1%D7%A4%D7%A8%20%D7%90%D7%95%D7%A8%D7%97%D7%99%D7%9D%3A%20___" target="_blank" rel="noopener" aria-label="דברו איתנו בוואטסאפ"><svg viewBox="0 0 32 32" aria-hidden="true" width="22" height="22"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.3.6 4.53 1.74 6.5L3 29l6.68-1.75A12.95 12.95 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.64c-2 0-3.95-.54-5.65-1.55l-.4-.24-3.97 1.04 1.06-3.86-.26-.4A10.6 10.6 0 0 1 5.4 16c0-5.87 4.77-10.64 10.64-10.64 5.86 0 10.63 4.77 10.63 10.64 0 5.86-4.77 10.64-10.63 10.64Zm5.83-7.96c-.32-.16-1.9-.94-2.19-1.04-.3-.11-.5-.16-.72.16-.21.32-.82 1.04-1 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.21-.18-.32-.02-.5.14-.65.15-.15.32-.37.48-.56.16-.18.21-.32.32-.53.1-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.3.32-1.12 1.09-1.12 2.66 0 1.57 1.14 3.08 1.3 3.3.16.2 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.46.2 2 .12.62-.09 1.9-.78 2.16-1.53.27-.74.27-1.38.19-1.52-.08-.13-.29-.21-.61-.37Z"/></svg></a>
+
+<script src="concepts.js" defer></script>
+
+<script>
+/* hero video: sharp source per viewport (vertical 9:16 crop on phones), AV1 when supported, loaded after first paint */
+(function(){var v=document.querySelector('video.hv');if(!v)return;
+if(matchMedia('(prefers-reduced-motion: reduce)').matches||(navigator.connection&&navigator.connection.saveData))return;
+var mob=matchMedia('(max-width:700px) and (orientation:portrait)').matches;
+var av1=v.canPlayType('video/mp4; codecs="av01.0.05M.08"')==='probably',d=v.dataset;
+var src=mob?(av1?d.mAv1:d.m):(av1?d.dAv1:d.d);
+var go=function(){v.src=src;v.addEventListener('playing',function(){v.classList.add('on')},{once:true});var p=v.play();if(p&&p.catch)p.catch(function(){})};
+if(document.readyState==='complete')setTimeout(go,150);else addEventListener('load',function(){setTimeout(go,150)});})();
+</script></body></html>
